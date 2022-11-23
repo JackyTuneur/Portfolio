@@ -61,6 +61,7 @@ body{
     margin-left: 3vh;
     margin-right: 3vh;
     cursor: pointer;
+    text-shadow: 0vh 0.35vh 0 rgba(255, 255, 255, 0.212);
 }
 
 /** HEADER **/
