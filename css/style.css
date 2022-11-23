@@ -61,7 +61,21 @@ body{
     margin-left: 3vh;
     margin-right: 3vh;
     cursor: pointer;
-    text-shadow: 0vh 0.35vh 0 rgba(255, 255, 255, 0.212);
+    text-shadow: 0vh 0.35vh 0 rgba(0, 0, 0, 0.692);
 }
 
 /** HEADER **/
+
+/** BODY **/
+
+.centering{
+    display: flex;
+    justify-content: center;
+}
+
+.logoTop{
+    margin-top: 11.5vh;
+    width: 22.5%;
+}
+
+/** BODY **/
