@@ -90,6 +90,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: -1;
+    perspective: 900px;
 }
 
 .test1{
@@ -99,4 +100,59 @@ body{
     background-size: cover;
     background-position: center;
     box-shadow: 0vh 0vh 3vh black;
+    z-index: 1;
+    animation: imageIn 1.5s;
+}
+
+@keyframes imageIn{
+    from{
+        opacity: 50%;
+        transform: scale(0.75);
+        transform: rotateY(0deg) rotateX(10deg) rotateZ(0deg);
+    }to{
+        opacity: 100;
+        transform: scale(1);
+    }
+}
+
+.codeIn{
+    transform: rotateY(20deg) rotateX(-2deg) rotateZ(3deg);
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    width: 27.5%;
+    z-index: 0;
+    box-shadow: 0vh 0vh 3vh black;
+    animation: animCodeIn 1.5s;
+}
+
+@keyframes animCodeIn {
+    from{
+        opacity: 0;
+        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }to{
+        opacity: 100;
+        transform: rotateY(20deg) rotateX(-2deg) rotateZ(3deg);
+    }
+}
+
+.prevuIn{
+    transform: rotateY(-20deg) rotateX(2deg) rotateZ(-3deg);
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    width: 27.5%;
+    z-index: 0;
+    animation: animPrevuIn 1.5s;
+    box-shadow: 0vh 0vh 3vh black;
+}
+
+@keyframes animPrevuIn {
+    from{
+        opacity: 0;
+        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }to{
+        opacity: 100;
+        transform: rotateY(-20deg) rotateX(2deg) rotateZ(-3deg);
+    }
 }
