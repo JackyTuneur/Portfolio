@@ -65,6 +65,11 @@ body{
     text-shadow: 0vh 0.35vh 0 rgba(0, 0, 0, 0.692);
 }
 
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+
 /** HEADER **/
 
 /** BODY **/
@@ -121,7 +126,7 @@ body{
 }
 
 .test1{
-    width: 90vh;
+    width: 95vh;
     height: 50vh;
     background-image: url(../image/dragonBallOmega/taleng.png);
     background-size: cover;
