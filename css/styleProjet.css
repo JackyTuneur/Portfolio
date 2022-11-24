@@ -38,6 +38,7 @@ body{
 /** HEADER **/
 
 .header{
+    z-index: 10;
     position: fixed;
     top: 0%;
     height: 8.5vh;
@@ -71,3 +72,200 @@ h1 a{
 }
 
 /** HEADER **/
+
+/** LOGO **/
+
+.centering{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+
+.logoTop{
+    margin-top: 10vh;
+    width: 40vh;
+    height: 20vh;
+    transition:all 1s;
+    background-size: cover;
+    background-image: url(../image/fx/logoEthewProjets.png);
+}
+
+.barre{
+    width: 18%;
+    opacity: 50%;
+}
+
+/** LOGO **/
+
+/** PROJECT **/
+
+.projectList{
+    display: flex;
+    flex-direction: column;
+}
+
+.project1{
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
+    display: flex;
+    align-items: center;
+    perspective: 900px;
+    justify-content: center;
+}
+
+.project1 .prevu{
+    width: 65vh;
+    height: 40vh;
+    transform: rotateY(10deg);
+    background-color: aqua;
+    background-image: url(../image/fallenNecromancer/taleng.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0vh 0vh 3vh black;
+    border-style: solid;
+    border-color: rgba(120, 235, 255, 0.5);
+    border-width: 0.25vh;
+}
+
+.project1 .textProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10vh;
+    width: 40%;
+}
+
+.project1 .barreProj{
+    width: 70%;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.project1 h1{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 5vh;
+}
+
+.project1 p{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 1.75vh;
+}
+
+/** PROJECT **/
+
+/** PROJECT2 **/
+
+.project2{
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    perspective: 900px;
+    justify-content: center;
+}
+
+.project2 .prevu{
+    width: 65vh;
+    height: 40vh;
+    transform: rotateY(-10deg);
+    background-color: aqua;
+    background-image: url(../image/goblinSeeker/taleng.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0vh 0vh 3vh black;
+    border-style: solid;
+    border-color: rgba(120, 255, 127, 0.5);
+    border-width: 0.25vh;
+}
+
+.project2 .textProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10vh;
+    width: 40%;
+}
+
+.project2 .barreProj{
+    width: 70%;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.project2 h1{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 5vh;
+}
+
+.project2 p{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 1.75vh;
+}
+
+/** PROJECT2 **/
+
+/** PROJECT3 **/
+
+.project3{
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    perspective: 900px;
+    justify-content: center;
+}
+
+.project3 .prevu{
+    width: 65vh;
+    height: 40vh;
+    transform: rotateY(10deg);
+    background-color: aqua;
+    background-image: url(../image/dragonBallOmega/taleng.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0vh 0vh 3vh black;
+    border-style: solid;
+    border-color: rgba(255, 120, 120, 0.5);
+    border-width: 0.25vh;
+}
+
+.project3 .textProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10vh;
+    width: 40%;
+}
+
+.project3 .barreProj{
+    width: 70%;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.project3 h1{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 5vh;
+}
+
+.project3 p{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 1.75vh;
+}
+
+/** PROJECT3 **/
