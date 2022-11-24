@@ -72,7 +72,7 @@ goLeftButtonFromCaroussel1.addEventListener("click", goToCaroussel0)
 
 goRightButtonFromCaroussel0.addEventListener("click", goToCaroussel1)
 
-goLeftButtonFromCaroussel0.addEventListener("click", goToCaroussel2)
+goLeftButtonFromCaroussel0.addEventListener("click", goToCaroussel3)
 
 goRightButtonFromCaroussel2.addEventListener("click", goToCaroussel3)
 

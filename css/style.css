@@ -31,7 +31,7 @@ time, mark, audio, video {
 }
 
 body{
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(44, 43, 49);
     overflow-x: hidden;
 }
 
@@ -324,6 +324,8 @@ body{
     transition: all 5s;
     box-shadow: inset 0vh -0.25vh 0 rgba(0, 0, 0, 0.26);
 }
+
+
 
 /* CAROUSSEL 1*/
 
