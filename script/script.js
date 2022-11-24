@@ -8,9 +8,17 @@ let goLeftButtonFromCaroussel0 = document.getElementById("goLeftB1");
 let goRightButtonFromCaroussel2 = document.getElementById("goRightB2");
 let goLeftButtonFromCaroussel2 = document.getElementById("goLeftB2");
 let loadingSlide = document.getElementById("loadingSlide");
+let logoChange = document.getElementById("logoChange");
+loadingSlide.children[1].classList.add("active");
+
 let actualCaroussel=1;
+let waitTime = 5;
 
 const goToCaroussel2 = () =>{
+    waitTime = 5;
+    logoChange.classList.add("blue");
+    logoChange.classList.remove("red");
+    logoChange.classList.remove("green");
     carousselDom.style.transform = "translateX(-100%)"
     loadingSlide.children[2].classList.add("active");
     loadingSlide.children[1].classList.remove("active");
@@ -19,6 +27,10 @@ const goToCaroussel2 = () =>{
 }
 
 const goToCaroussel1 = () =>{
+    waitTime = 5;
+    logoChange.classList.add("red");
+    logoChange.classList.remove("blue");
+    logoChange.classList.remove("green");
     carousselDom.style.transform = "translateX(0%)"
     loadingSlide.children[1].classList.add("active");
     loadingSlide.children[2].classList.remove("active");
@@ -27,6 +39,10 @@ const goToCaroussel1 = () =>{
 }
 
 const goToCaroussel0 = () =>{
+    waitTime = 5;
+    logoChange.classList.add("green");
+    logoChange.classList.remove("red");
+    logoChange.classList.remove("blue");
     carousselDom.style.transform = "translateX(100%)"
     loadingSlide.children[0].classList.add("active");
     loadingSlide.children[1].classList.remove("active");
@@ -60,15 +76,18 @@ goLeftButtonFromCaroussel2.addEventListener("click", () => {
 
 const autoSlide = () => {
     setTimeout(() => {
-        if(actualCaroussel ===0){
-            goToCaroussel1();
-        }else if(actualCaroussel ===1){
-            goToCaroussel2();
-        }else if(actualCaroussel ===2){
-            goToCaroussel0();
+        waitTime -= 0.2
+            if(waitTime <= 0){
+                if(actualCaroussel ===0){
+                    goToCaroussel1();
+                }else if(actualCaroussel ===1){
+                    goToCaroussel2();
+                }else if(actualCaroussel ===2){
+                    goToCaroussel0();
+            }
         }
         autoSlide();
-    }, 5000);
+    }, 200);
 }
 
 autoSlide();

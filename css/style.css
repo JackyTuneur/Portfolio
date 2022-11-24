@@ -76,7 +76,21 @@ body{
 
 .logoTop{
     margin-top: 10.5vh;
-    width: 22.5%;
+    width: 40vh;
+    height: 20vh;
+    transition:all 1s;
+    background-size: cover;
+    background-image: url(../image/Logo/EthewDevLogo.png);
+}
+
+.logoTop.blue{
+    background-image: url(../image/Logo/EthewDevLogoBlue.png);
+}
+.logoTop.red{
+    background-image: url(../image/Logo/EthewDevLogo.png);
+}
+.logoTop.green{
+    background-image: url(../image/Logo/EthewDevLogoGreen.png);
 }
 
 /** BODY **/
@@ -132,6 +146,10 @@ body{
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.5);
     border-width: 0.10vh;
+}
+
+#car3 .test1{
+    background-image: url(../image/fallenNecromancer/taleng.png);
 }
 
 @keyframes imageIn{
@@ -254,12 +272,12 @@ body{
     height: 1.25vh;
     background-color: rgba(0, 0, 0, 0.452);
     transition: all 1s;
-    margin: 0.5vh;
+    margin: 0.4vh;
     border-radius: 50%;
 }
 
 .loader.active{
-    background-color: rgba(255, 255, 255, 0.76);
+    background-color: rgba(255, 255, 255, 0.897);
     transition: all 5s;
 }
 
