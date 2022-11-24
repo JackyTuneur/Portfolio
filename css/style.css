@@ -81,6 +81,19 @@ body{
 
 /** BODY **/
 
+/* CAROUSSEL 1*/
+
+
+.insideBodyCaroussel{
+    position: absolute;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(.22,.76,.2,.97);
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .caroussel{
     position: absolute;
     top: 18%;
@@ -102,6 +115,9 @@ body{
     box-shadow: 0vh 0vh 3vh black;
     z-index: 1;
     animation: imageIn 1.5s;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 0.10vh;
 }
 
 @keyframes imageIn{
@@ -124,6 +140,9 @@ body{
     z-index: 0;
     box-shadow: 0vh 0vh 3vh black;
     animation: animCodeIn 1.5s;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 0.10vh;
 }
 
 @keyframes animCodeIn {
@@ -145,6 +164,9 @@ body{
     z-index: 0;
     animation: animPrevuIn 1.5s;
     box-shadow: 0vh 0vh 3vh black;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 0.10vh;
 }
 
 @keyframes animPrevuIn {
@@ -156,3 +178,55 @@ body{
         transform: rotateY(-20deg) rotateX(2deg) rotateZ(-3deg);
     }
 }
+
+.caroussel h1{
+    font-family: Quicksilver;
+    left: 2%;
+    position: absolute;
+    bottom: 3%;
+    font-size: 4vh;
+    color: white;
+    text-shadow: 0vh 0.5vh 0 rgba(0, 0, 0, 0.692);
+}
+
+.caroussel h2{
+    font-family: Quicksilver;
+    left: 2%;
+    position: absolute;
+    bottom: 1%;
+    font-size: 2vh;
+    color: white;
+    text-shadow: 0vh 0.5vh 0 rgba(0, 0, 0, 0.692);
+}
+
+.goRight{
+    position: absolute;
+    width: 4vh;
+    top: 26vh;
+    right: 1%;
+    fill: white;
+    filter: drop-shadow(0 0.75vh 0 rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+
+.goLeft{
+    position: absolute;
+    width: 4vh;
+    top: 26vh;
+    left: 1%;
+    transform: rotateY(180deg);
+    fill: white;
+    filter: drop-shadow(0 0.75vh 0 rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+
+#car1{
+    left:-100%;
+}
+
+#car3{
+    left:100%;
+}
+
+/* CAROUSSEL 1*/
+
