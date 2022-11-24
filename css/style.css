@@ -225,10 +225,45 @@ body{
     font-family: Quicksilver;
     left: 2%;
     position: absolute;
-    bottom: 1%;
+    bottom: 8%;
     font-size: 2vh;
     color: white;
     text-shadow: 0vh 0.5vh 0 rgba(0, 0, 0, 0.692);
+}
+
+.linkMore{
+    font-family: Quicksilver;
+    bottom: 0%;
+    left: 1.8%;
+    text-underline-offset : 3px;
+    color: rgb(255, 255, 255);
+    text-decoration-thickness : 0px;
+    text-decoration:underline;
+    transition: all 0.5s;
+    position: absolute;
+    font-size: 2vh;
+    transition: all 1s;
+}
+
+.linkMore:hover{
+    animation: hoverAnim 1s;
+    color: rgb(0, 0, 0);
+    text-underline-offset : -1.6vh;
+    text-decoration-thickness : 2vh;
+    text-decoration-skip-ink : none;
+    transition: all 1s;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+@keyframes hoverAnim {
+    from{
+        text-underline-offset : 3px;
+        text-decoration-thickness : 0px;
+    }to{
+        text-underline-offset : -1.6vh;
+        text-decoration-thickness : 2vh;
+        text-decoration-skip-ink : none;
+    }
 }
 
 .goRight{
@@ -238,6 +273,7 @@ body{
     right: 1%;
     fill: white;
     filter: drop-shadow(0 0.75vh 0 rgba(0, 0, 0, 0.5));
+    
     cursor: pointer;
 }
 
