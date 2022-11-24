@@ -30,6 +30,33 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/** LOADER **/
+
+.loadingPage{
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    animation-fill-mode: both;
+    z-index: 10;
+    opacity: 100%;
+    transition: all 1s;
+    z-index: 100;
+}
+
+.loadingPage.disapear{
+    transition: all 1s;
+    opacity: 0%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    image-rendering:pixelated;
+}
+
+/** LOADER **/
+
 body{
     background-color: rgb(44, 43, 49);
     overflow-x: hidden;
@@ -278,25 +305,58 @@ h1 a{
 
 /** PROJECT3 **/
 
-.loadingPage{
-    background-color: black;
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    animation-fill-mode: both;
-    z-index: 10;
-    opacity: 100%;
-    transition: all 1s;
-    z-index: 100;
+/** PROJECT4 **/
+
+.project4{
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    perspective: 900px;
+    justify-content: center;
 }
 
-.loadingPage.disapear{
-    transition: all 1s;
-    opacity: 0%;
-    pointer-events: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    image-rendering:pixelated;
+.project4 .prevu{
+    width: 65vh;
+    height: 40vh;
+    transform: rotateY(-10deg);
+    background-color: aqua;
+    background-image: url(../image/gameint/taleng.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0vh 0vh 3vh black;
+    border-style: solid;
+    border-color: rgba(255, 120, 120, 0.5);
+    border-width: 0.25vh;
 }
+
+.project4 .textProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10vh;
+    width: 40%;
+}
+
+.project4 .barreProj{
+    width: 70%;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.project4 h1{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 5vh;
+}
+
+.project4 p{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 1.75vh;
+    text-align: justify;
+}
+
+/** PROJECT4 **/
