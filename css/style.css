@@ -197,6 +197,24 @@ h1 a{
     border-width: 0.10vh;
 }
 
+.showPerso{
+    position: absolute;
+    top: 29%;
+    z-index: 2;
+    width: 25%;
+    left: 12.5%;
+    image-rendering: pixelated;
+    animation: appearM 3s;
+}
+
+@keyframes appearM {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 100;
+    }
+}
+
 @keyframes animCodeIn {
     from{
         opacity: 0;
