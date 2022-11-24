@@ -138,6 +138,7 @@ h1 a{
     flex-direction: column;
     margin-left: 10vh;
     width: 40%;
+    
 }
 
 .project1 .barreProj{
@@ -156,6 +157,7 @@ h1 a{
     font-family: Quicksilver;
     color: white;
     font-size: 1.75vh;
+    text-align: justify;
 }
 
 /** PROJECT **/
@@ -211,6 +213,7 @@ h1 a{
     font-family: Quicksilver;
     color: white;
     font-size: 1.75vh;
+    text-align: justify;
 }
 
 /** PROJECT2 **/
@@ -266,6 +269,11 @@ h1 a{
     font-family: Quicksilver;
     color: white;
     font-size: 1.75vh;
+    text-align: justify;
+}
+
+.projectList h1{
+    text-shadow: 0vh 0.5vh 0vh rgba(0, 0, 0, 0.6);
 }
 
 /** PROJECT3 **/
