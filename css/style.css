@@ -151,6 +151,9 @@ body{
 #car3 .test1{
     background-image: url(../image/fallenNecromancer/taleng.png);
 }
+#car4 .test1{
+    background-image: url(../image/gameint/taleng.png);
+}
 
 @keyframes imageIn{
     from{
@@ -233,7 +236,7 @@ body{
 
 .linkMore{
     font-family: Quicksilver;
-    bottom: 0%;
+    bottom: 0.35%;
     left: 1.8%;
     text-underline-offset : 3px;
     color: rgb(255, 255, 255);
@@ -296,6 +299,10 @@ body{
     left:100%;
 }
 
+#car4{
+    left: 200%;
+}
+
 .loadingSlider{
     display: flex;
     justify-content: center;
@@ -315,6 +322,7 @@ body{
 .loader.active{
     background-color: rgba(255, 255, 255, 0.897);
     transition: all 5s;
+    box-shadow: inset 0vh -0.25vh 0 rgba(0, 0, 0, 0.26);
 }
 
 /* CAROUSSEL 1*/
