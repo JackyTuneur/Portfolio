@@ -145,10 +145,9 @@ h1 a{
     justify-content: center;
 }
 
-.project1 .prevu{
+.prevu{
     width: 65vh;
     height: 40vh;
-    transform: rotateY(10deg);
     background-color: aqua;
     background-image: url(../image/fallenNecromancer/taleng.png);
     background-size: cover;
@@ -179,6 +178,10 @@ h1 a{
     font-family: Quicksilver;
     color: white;
     font-size: 5vh;
+}
+
+.textProject h1{
+    text-align: center;
 }
 
 .project1 p{
@@ -225,10 +228,9 @@ h1 a{
     justify-content: center;
 }
 
-.project2 .prevu{
+.prevu2{
     width: 65vh;
     height: 40vh;
-    transform: rotateY(-10deg);
     background-color: aqua;
     background-image: url(../image/goblinSeeker/taleng.png);
     background-size: cover;
@@ -281,20 +283,6 @@ h1 a{
     justify-content: center;
 }
 
-.project3 .prevu{
-    width: 65vh;
-    height: 40vh;
-    transform: rotateY(10deg);
-    background-color: aqua;
-    background-image: url(../image/dragonBallOmega/taleng.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0vh 0vh 3vh black;
-    border-style: solid;
-    border-color: rgba(255, 120, 120, 0.5);
-    border-width: 0.25vh;
-}
-
 .project3 .textProject{
     display: flex;
     justify-content: center;
@@ -303,6 +291,11 @@ h1 a{
     margin-left: 10vh;
     text-align: center;
     width: 40%;
+}
+
+.project3 .prevu{
+    background-image: url(../image/dragonBallOmega/taleng.png);
+    border-color: rgba(255, 120, 120, 0.5);
 }
 
 .project3 .barreProj{
@@ -343,19 +336,6 @@ h1 a{
     justify-content: center;
 }
 
-.project4 .prevu{
-    width: 65vh;
-    height: 40vh;
-    transform: rotateY(-10deg);
-    background-color: aqua;
-    background-image: url(../image/gameint/taleng.png);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0vh 0vh 3vh black;
-    border-style: solid;
-    border-color: rgba(255, 120, 120, 0.5);
-    border-width: 0.25vh;
-}
 
 .project4 .textProject{
     display: flex;
@@ -364,6 +344,11 @@ h1 a{
     flex-direction: column;
     margin-right: 10vh;
     width: 40%;
+}
+
+.project4 .prevu2{
+    background-image: url(../image/gameint/taleng.png);
+    border-color: rgba(179, 34, 34, 0.5);
 }
 
 .project4 .barreProj{
