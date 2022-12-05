@@ -94,10 +94,36 @@ body{
 }
 
 h1 a{
-    text-decoration: none;
+    text-underline-offset : 3px;
+    color: rgb(255, 255, 255);
+    text-decoration-thickness : 0px;
+    text-decoration:underline;
     color: white;
+    transition: all 0.5s;
 }
 
+h1 a:hover{
+    animation: hoverAnim 1s;
+    color: rgb(0, 0, 0);
+    text-underline-offset : -3.25vh;
+    text-decoration-thickness : 4vh;
+    text-decoration-skip-ink : none;
+    transition: all 1s;
+    text-shadow: 0vh 0.35vh 0 rgba(228, 162, 162, 0.89);
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+
+@keyframes hoverAnim {
+    from{
+        text-underline-offset : 3px;
+        text-decoration-thickness : 0px;
+    }to{
+        text-underline-offset : -3.25vh;
+        text-decoration-thickness : 4vh;
+        text-decoration-skip-ink : none;
+    }
+}
 /** HEADER **/
 
 /** LOGO **/
