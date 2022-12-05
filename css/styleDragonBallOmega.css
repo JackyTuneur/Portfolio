@@ -117,15 +117,15 @@ h1 a{
 
 .logoTop{
     margin-top: 10vh;
-    width: 30vh;
-    height: 15vh;
+    width: 20vh;
+    height: 10vh;
     transition:all 1s;
     background-size: cover;
     background-image: url(../image/fx/logoEthewProjets.png);
 }
 
 .barre{
-    width: 18%;
+    width: 10%;
     opacity: 50%;
 }
 
@@ -144,7 +144,109 @@ h1 a{
 }
 
 .logoProj{
-    width: 35%;
+    width: 20%;
 }
 
 /** CONTENT **/
+
+/** LINK **/
+
+.linkProj{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.linkInner{
+    margin: 5vh;
+    fill: white;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkInner:hover{
+    transition: all 0.5s;
+    transform: translateY(-0.5vh);
+    fill: black;
+    filter: drop-shadow(0px 0.2vh 0.75vh rgb(255, 255, 255));
+}
+
+.linkInner h1{
+    margin-top: 0.5vh;
+    font-size: 1.75vh;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Quicksilver;
+}
+
+/** LINK **/
+
+.imagePrev{
+    width: 40%;
+    border-style: solid;
+    border-width: 0.15vh;
+    border-color: rgb(116, 11, 11);
+    filter: drop-shadow(0px 0px 2vw rgb(126, 35, 35));
+}
+
+.contentIn1{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    perspective: 900px;
+    justify-content: space-evenly;
+}
+
+.textIn{
+    width: 40%;
+    font-family: Quicksilver;
+    color: white;
+    font-size: 3.5vh;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentIn1 p{
+    width: 100%;
+    text-align: justify;
+    font-family: Quicksilver;
+    color: white;
+    font-size: 2vh;
+    margin-bottom: 3vh;
+    
+}
+
+.contentIn1 .imagePrev{
+    transform: rotateY(10deg);
+}
+
+.contentIn2{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    perspective: 900px;
+    justify-content: space-evenly;
+}
+
+.contentIn2 .imagePrev{
+    transform: rotateY(-10deg);
+}
+
+.contentIn2 p{
+    width: 100%;
+    text-align: justify;
+    font-family: Quicksilver;
+    color: white;
+    font-size: 2vh;
+    margin-bottom: 3vh;
+}
