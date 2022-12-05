@@ -75,7 +75,7 @@ h1 a{
 }
 
 h1 a:hover{
-    animation: hoverAnim 1s;
+    animation: hoverAnim2 1s;
     color: rgb(0, 0, 0);
     text-underline-offset : -3.25vh;
     text-decoration-thickness : 4vh;
@@ -86,7 +86,7 @@ h1 a:hover{
 }
 
 
-@keyframes hoverAnim {
+@keyframes hoverAnim2 {
     from{
         text-underline-offset : 3px;
         text-decoration-thickness : 0px;
