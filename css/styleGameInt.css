@@ -1,0 +1,422 @@
+@font-face 
+{
+  font-family: Quicksilver;
+  src: url("../fonts/Quicksilver\ Italic.otf");
+}
+
+
+*{
+    margin: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+
+/** LOADER **/
+
+.pageContent{
+    width: 100%;
+}
+
+.loadingPage{
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    animation-fill-mode: both;
+    z-index: 10;
+    opacity: 100%;
+    transition: all 1s;
+    z-index: 100;
+}
+
+.loadingPage.disapear{
+    transition: all 1s;
+    opacity: 0%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    image-rendering:pixelated;
+}
+
+/** LOADER **/
+
+body{
+    background-color: rgb(44, 43, 49);
+    overflow-x: hidden;
+}
+
+/** HEADER **/
+
+.header{
+    z-index: 10;
+    position: fixed;
+    top: 0%;
+    height: 8.5vh;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    box-shadow: inset 0vh -1vh 5vh black;
+    filter: drop-shadow(0vh 0vh 5vh black);
+}
+
+.centeringHeader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeringHeader h1{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 4vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    cursor: pointer;
+    text-shadow: 0vh 0.35vh 0 rgba(0, 0, 0, 0.692);
+}
+
+h1 a{
+    text-underline-offset : 3px;
+    color: rgb(255, 255, 255);
+    text-decoration-thickness : 0px;
+    text-decoration:underline;
+    color: white;
+    transition: all 0.5s;
+}
+
+h1 a:hover{
+    animation: hoverAnim 1s;
+    color: rgb(0, 0, 0);
+    text-underline-offset : -3.25vh;
+    text-decoration-thickness : 4vh;
+    text-decoration-skip-ink : none;
+    transition: all 1s;
+    text-shadow: 0vh 0.35vh 0 rgba(228, 162, 162, 0.89);
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+
+@keyframes hoverAnim {
+    from{
+        text-underline-offset : 3px;
+        text-decoration-thickness : 0px;
+    }to{
+        text-underline-offset : -3.25vh;
+        text-decoration-thickness : 4vh;
+        text-decoration-skip-ink : none;
+    }
+}
+
+/** HEADER **/
+
+
+
+/** CONTENT **/
+
+.centeringLogoProj{
+    margin-top: 11.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoProj{
+    width: 20%;
+}
+
+/** CONTENT **/
+
+/** LINK **/
+
+.linkProj{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.linkInner{
+    margin: 5vh;
+    fill: white;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0.5vh 0vh rgba(0, 0, 0, 0.411));
+}
+
+.linkInner:hover{
+    transition: all 0.5s;
+    transform: translateY(-0.5vh);
+    fill: black;
+    filter: drop-shadow(0px 0.2vh 0.75vh rgb(255, 255, 255));
+}
+
+.linkInner h1{
+    margin-top: 0.5vh;
+    font-size: 1.75vh;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Quicksilver;
+}
+
+/** LINK **/
+
+.imagePrev{
+    width: 35vw;
+    height: 20vw;
+    border-style: solid;
+    border-width: 0.15vh;
+    border-color: rgb(116, 11, 11);
+    filter: drop-shadow(0px 0px 2vw rgb(116, 11, 11));
+}
+
+.contentIn1{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    perspective: 900px;
+    justify-content: space-evenly;
+}
+
+.textIn{
+    width: 40%;
+    font-family: Quicksilver;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.textIn h1{
+    filter: drop-shadow(0px 0.5vh 0vh rgba(0, 0, 0, 0.411));
+    margin-bottom: 1vh;
+}
+
+.contentIn1 p{
+    width: 100%;
+    text-align: justify;
+    font-family: Quicksilver;
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 3vh;
+    
+}
+
+.contentIn1 .imagePrev{
+    transform: rotateY(10deg);
+}
+
+.contentIn2{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    perspective: 900px;
+    justify-content: space-evenly;
+}
+
+.contentIn2 .imagePrev{
+    transform: rotateY(-10deg);
+}
+
+.contentIn2 p{
+    width: 100%;
+    text-align: justify;
+    font-family: Quicksilver;
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 3vh;
+}
+
+.centeringFrame{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+}
+
+.centeringFrame h1{
+    font-family: Quicksilver;
+    color: white;
+    font-size: 6vw;
+    text-shadow: 0vh 0.5vh 0vh rgba(0, 0, 0, 0.404);
+    margin-bottom: 2vh;
+    filter:drop-shadow(0px 0px 1vh black);
+    z-index: 100;
+}
+
+#framePreviewGame{
+    width: 57.5vw;
+    height: 30vw;
+    border-style: solid;
+    border-width: 0.15vh;
+    border-color: rgb(116, 11, 11);
+    filter: drop-shadow(0px 0px 2vw rgb(116, 11, 11));
+}
+
+/** LINK **/
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contact{
+    font-family: Quicksilver;
+    margin-top: 1vh;
+    color: white;
+    font-size: 5vh;
+    width: 100%;
+    text-align: center;
+}
+
+footer .contactContent{
+    font-family: Quicksilver;
+    margin-top: 1vh;
+    fill: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer .iconContact{
+    margin-right: 2vh;
+    margin-left: 2vh;
+    cursor: pointer;
+}
+
+/************************/
+
+@media (orientation: portrait) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .centeringHeader h1 {
+        font-family: Quicksilver;
+        color: white;
+        font-size: 6vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        cursor: pointer;
+        text-shadow: 0vh 0.35vh 0 rgb(0 0 0 / 69%);
+    }
+
+    .contentIn1{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+        align-content: center;
+    }
+
+    .contentIn2 {
+        flex-direction: column;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+        align-items: center;
+        align-content: center;
+    }
+
+    .logoProj {
+        width: 50%;
+    }
+
+    .imagePrev {
+        width: 35vh;
+        height: 20vh;
+        border-style: solid;
+        border-width: 0.15vh;
+        transform: rotateY(0deg);
+    }
+
+    .contentIn1 .imagePrev {
+        transform: rotateY(0deg);
+    }
+
+    .contentIn2 .imagePrev {
+        transform: rotateY(0deg);
+    }
+
+    .textIn {
+        width: 80%;
+        font-family: Quicksilver;
+        color: white;
+        margin-top: 0.5vh;
+        font-size: 3.5vh;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textIn h1 {
+        filter: drop-shadow(0px 0.5vh 0vh rgba(0, 0, 0, 0.411));
+        margin-bottom: 1vh;
+        width: 100%;
+    }
+
+    .contentIn1 p {
+        width: 100%;
+        text-align: justify;
+        font-family: Quicksilver;
+        color: white;
+        font-size: 1.65vh;
+        margin-bottom: 3vh;
+    }
+    .contentIn2 p {
+        width: 100%;
+        text-align: justify;
+        font-family: Quicksilver;
+        color: white;
+        font-size: 1.65vh;
+        margin-bottom: 3vh;
+    }
+    .centeringFrame {
+        display: none;
+    }
+    .linkProj {
+        display: none;
+    }
+  }
