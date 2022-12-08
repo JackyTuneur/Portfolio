@@ -12,11 +12,13 @@ let clientHeight = document.documentElement.clientHeight;
 let clientWidth = document.documentElement.clientWidth;
 
 let logMovement = (e) => {
-  let mouseX = e.clientX / clientWidth *100;
-  let mouseY = e.clientY / clientHeight *100;
-  mouseX = mouseX - 50;
-  mouseY = mouseY - 50;
-  fancyEffectOnMouseMoove(mouseX, mouseY);
+  if(!clientHeight > clientWidth){
+    let mouseX = e.clientX / clientWidth *100;
+    let mouseY = e.clientY / clientHeight *100;
+    mouseX = mouseX - 50;
+    mouseY = mouseY - 50;
+    fancyEffectOnMouseMoove(mouseX, mouseY);
+  }
 }
 
 document.addEventListener('mousemove', logMovement);
