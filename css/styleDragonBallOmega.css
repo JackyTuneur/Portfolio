@@ -32,6 +32,10 @@ time, mark, audio, video {
 
 /** LOADER **/
 
+.pageContent{
+    width: 100%;
+}
+
 .loadingPage{
     background-color: black;
     position: fixed;
@@ -127,42 +131,12 @@ h1 a:hover{
 
 /** HEADER **/
 
-/** LOGO **/
-
-.centering{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin-top: 1vh;
-    margin-bottom: 2.5vh;
-    background-color: rgba(0, 0, 0, 0.479);
-    padding-bottom: 2.5vh;
-    box-shadow: 0vh 0vh 2vh black;
-}
-
-.logoTop{
-    margin-top: 10vh;
-    width: 20vh;
-    height: 10vh;
-    transition:all 1s;
-    background-size: cover;
-    background-image: url(../image/fx/logoEthewProjets.png);
-}
-
-.barre{
-    width: 10%;
-    opacity: 50%;
-}
-
-/** LOGO **/
-
 
 
 /** CONTENT **/
 
 .centeringLogoProj{
+    margin-top: 11.5vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -312,4 +286,133 @@ h1 a:hover{
     border-color: rgb(116, 11, 11);
     filter: drop-shadow(0px 0px 2vw rgb(126, 35, 35));
 }
+
 /** LINK **/
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contact{
+    font-family: Quicksilver;
+    margin-top: 1vh;
+    color: white;
+    font-size: 5vh;
+    width: 100%;
+    text-align: center;
+}
+
+footer .contactContent{
+    font-family: Quicksilver;
+    margin-top: 1vh;
+    fill: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer .iconContact{
+    margin-right: 2vh;
+    margin-left: 2vh;
+    cursor: pointer;
+}
+
+/************************/
+
+@media (orientation: portrait) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .centeringHeader h1 {
+        font-family: Quicksilver;
+        color: white;
+        font-size: 6vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        cursor: pointer;
+        text-shadow: 0vh 0.35vh 0 rgb(0 0 0 / 69%);
+    }
+
+    .contentIn1{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .contentIn2 {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .logoProj {
+        width: 50%;
+    }
+
+    .imagePrev {
+        width: 35vh;
+        height: 20vh;
+        border-style: solid;
+        border-width: 0.15vh;
+        border-color: rgb(116, 11, 11);
+        filter: drop-shadow(0px 0px 2vw rgb(126, 35, 35));
+        transform: rotateY(0deg);
+    }
+
+    .contentIn1 .imagePrev {
+        transform: rotateY(0deg);
+    }
+
+    .contentIn2 .imagePrev {
+        transform: rotateY(0deg);
+    }
+
+    .textIn {
+        width: 80%;
+        font-family: Quicksilver;
+        color: white;
+        margin-top: 0.5vh;
+        font-size: 3.5vh;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textIn h1 {
+        filter: drop-shadow(0px 0.5vh 0vh rgba(0, 0, 0, 0.411));
+        margin-bottom: 1vh;
+        width: 100%;
+    }
+
+    .contentIn1 p {
+        width: 100%;
+        text-align: justify;
+        font-family: Quicksilver;
+        color: white;
+        font-size: 1.65vh;
+        margin-bottom: 3vh;
+    }
+    .contentIn2 p {
+        width: 100%;
+        text-align: justify;
+        font-family: Quicksilver;
+        color: white;
+        font-size: 1.65vh;
+        margin-bottom: 3vh;
+    }
+    .centeringFrame {
+        display: none;
+    }
+    .linkProj {
+        display: none;
+    }
+  }
