@@ -70,7 +70,7 @@ body{
 /** HEADER **/
 
 .header{
-    z-index: 10;
+    z-index: 100000;
     position: fixed;
     top: 0%;
     height: 8.5vh;
