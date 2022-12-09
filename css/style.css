@@ -455,6 +455,8 @@ footer .iconContact{
 
 /************************/
 
+.displayButton{display: none;}
+
 @media (orientation: portrait) {
     body{
     }
@@ -489,6 +491,27 @@ footer .iconContact{
         transition: all 1s;
         background-size: cover;
         background-image: url(../image/Logo/EthewDevLogo.png);
+    }
+
+    .centeringTxT{
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: Quicksilver;
+    }
+
+    .displayButton{
+        display: block;
+
+        padding: 2vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        color: white;
+        border-radius: 1vh;
+        font-size: 3vh;
+        background-color: black;
     }
 }
 
