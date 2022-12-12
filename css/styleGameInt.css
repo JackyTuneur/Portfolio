@@ -147,6 +147,7 @@ h1 a:hover{
 
 .logoProj{
     width: 20%;
+    filter: invert(1);
 }
 
 /** CONTENT **/
