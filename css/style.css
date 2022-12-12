@@ -473,6 +473,11 @@ footer .iconContact{
     font-size: 1.5vw;
 }
 
+.centeringSpec {
+    display: flex;
+    justify-content: center;
+}
+
 /************************/
 
 .mobileContent{display:none}
