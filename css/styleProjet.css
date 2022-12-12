@@ -534,9 +534,20 @@ footer .contactContent{
     justify-content: center;
 }
 
-footer .iconContact{
-    margin-right: 2vh;
+.contactContent a {
+    width: 5.5vh;
+    height: 5.5vh;
     margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.contactContent a img{
+    width: 5.5vh;
+    height: 5.5vh;
+    filter: invert(1);
+}
+
+footer .iconContact{
     cursor: pointer;
 }
 
